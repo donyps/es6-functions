@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/donyps/es6-functions.git"
+    "url": "https://github.com/donyps/es6-functions.git"
   },
   "author": "Dony Soans",
   "license": "ISC",
