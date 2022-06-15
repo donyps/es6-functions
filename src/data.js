@@ -35,4 +35,6 @@ const commitObj = JSON.parse(`
 ]
 `);
 
-module.exports = { persons, commitObj };
+const numbersArray = [23, 45, 20, 10, 57, 78, 18, 28, 8];
+
+module.exports = { persons, commitObj, numbersArray };

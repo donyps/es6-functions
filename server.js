@@ -1,6 +1,6 @@
 const app = require('express')();
-const { raFunction, findLatestCommits } = require('./src/jsFunctions');
-const { persons, commitObj } = require('./src/data');
+const { raFunction, findLatestCommits, findArrMethods } = require('./src/jsFunctions');
+const { persons, commitObj, numbersArray } = require('./src/data');
 
 const port = 3001;
 
@@ -15,3 +15,5 @@ app.listen(port, () => {
 console.log(`Names starts with "ra" : ${raFunction(persons)}`);
 console.log('Latest committed objects');
 console.log(JSON.stringify(findLatestCommits(commitObj)));
+
+findArrMethods(numbersArray, 50);

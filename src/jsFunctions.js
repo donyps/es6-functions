@@ -9,4 +9,11 @@ const findLatestCommits = (commitObjects) => commitObjects.map((commitObject) =>
   return commitObject;
 });
 
-module.exports = { raFunction, findLatestCommits };
+const findArrMethods = (arrObj, max) => {
+  const numberGrt = arrObj.find((k) => k > max);
+  console.log(`First number found in the array greater than 50 is: ${numberGrt}`);
+  const numberGrtInd = arrObj.findIndex((k) => k > max);
+  console.log(`Index of the first number found in the array greater than 50 is: ${numberGrtInd}`);
+};
+
+module.exports = { raFunction, findLatestCommits, findArrMethods };
