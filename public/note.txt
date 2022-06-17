@@ -1,0 +1,2 @@
+Writing this line to the existig file
+Appending text to the existing file

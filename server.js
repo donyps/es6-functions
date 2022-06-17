@@ -1,15 +1,14 @@
 const app = require('express')();
 const { raFunction, findLatestCommits, findArrMethods } = require('./src/jsFunctions');
 const { persons, commitObj, numbersArray } = require('./src/data');
+const router = require('./src/router');
 
 const port = 3001;
 
-app.get('/', (req, res) => {
-  res.send('Hi, I am working');
-});
+app.use('/', router);
 
 app.listen(port, () => {
-  console.log(`Server is listening to post http://localhost:${port}`);
+  console.log(`Server is listening to host http://localhost:${port}`);
 });
 
 console.log(`Names starts with "ra" : ${raFunction(persons)}`);
