@@ -16,4 +16,17 @@ const findArrMethods = (arrObj, max) => {
   console.log(`Index of the first number found in the array greater than 50 is: ${numberGrtInd}`);
 };
 
-module.exports = { raFunction, findLatestCommits, findArrMethods };
+const getLetterCount = (string) => {
+  const letters = Array.from(string);
+  const letterCount = letters.reduce((accumulator, currentValue) => {
+    if (accumulator[currentValue]) {
+      accumulator[currentValue] += 1;
+    } else {
+      accumulator[currentValue] = 1;
+    }
+    return accumulator;
+  }, {});
+  return letterCount;
+};
+
+module.exports = { raFunction, findLatestCommits, findArrMethods, getLetterCount };
